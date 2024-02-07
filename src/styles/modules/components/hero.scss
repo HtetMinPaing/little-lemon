@@ -17,16 +17,15 @@
 }
 
 .leftBox .title {
-    font-size: 3.5rem;
+    @include title
 }
 
 .leftBox .subtitle {
-    font-size: 2.2rem;
+    @include subtitle
 }
 
 .leftBox .description {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    @include normalText
 }
 
 .rightBox {
@@ -38,14 +37,7 @@
 }
 
 .button {
-    width: 18rem;
-    padding: 0.5rem;
-    margin: 2rem 0;
-    border: 0.1rem solid var(--highlight-2);
-    border-radius: 16rem;
-    background-color: var(--primary-2);
-    font-size: 1.8rem;
-    cursor: pointer;
+    @include button
 }
 
 .button:hover {

@@ -4,3 +4,29 @@
 	}
 }
 
+@mixin button {
+	width: 18rem;
+    padding: 0.5rem;
+    margin: 2rem 0;
+    border: 0.1rem solid var(--highlight-2);
+    border-radius: 16rem;
+    background-color: var(--primary-2);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@mixin normalText {
+	font-family: 'Karla', sans-serif;
+	font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+@mixin subtitle {
+	font-size: 1.8rem;
+	font-family: 'Karla', sans-serif;
+}
+
+@mixin title {
+	font-size: 4rem;
+	font-family: 'Markazi Text', serif;
+}
