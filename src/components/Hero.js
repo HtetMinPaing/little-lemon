@@ -1,8 +1,24 @@
 import React from 'react'
+import homeImage from '../assets/restauranfood.jpg'
+import '../styles/modules/components/hero.scss'
 
 const Hero = () => {
   return (
-    <section>Hero</section>
+    <div className='heroContainer'>
+      <div className='leftBox'>
+        <h1 className='title'>Little Lemon</h1>
+        <p className='subtitle'>Chicago</p>
+        <p className='description'>
+          <p>Lorem ipsum dolor sit amet, consectetur</p> 
+          <p>adipiscing elit, sed do eiusmod tempor</p> 
+          <p>incididunt ut labore et dolore magna aliqua.</p>
+          <button className='button'>Reserve a Table</button>
+        </p>
+      </div>
+      <div className='rightBox'>
+        <img src={homeImage} alt='restaurant' />
+      </div>
+    </div>
   )
 }
 

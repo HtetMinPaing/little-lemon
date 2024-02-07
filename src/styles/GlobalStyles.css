@@ -20,6 +20,7 @@ body {
 	font-family: 'Markazi Text', serif;
 	width: 100%;
 	min-height: 100vh;
+	background: var(--highlight-1);
 }
 * {
 	font-family: 'Karla', sans-serif;

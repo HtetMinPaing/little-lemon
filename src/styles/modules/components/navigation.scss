@@ -44,11 +44,13 @@
     padding: 0.9rem 3rem;
     font-size: 1.8rem;
     text-decoration: none;
-    width: 100%;
+    width: 200%;
+    text-align: center;
     color: var(--primary-1);
     @include smallDeviceSize {
-        margin-bottom: 0.9rem;
+        padding-bottom: 0.9rem;
         border-bottom: 0.2rem solid var(--primary-1);
+        background: var(--highlight-1);
     }
 }
 
