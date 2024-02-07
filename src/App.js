@@ -1,20 +1,27 @@
-import './App.css';
-import About from './components/About';
-import Bottom from './components/Bottom';
-import Hero from './components/Hero';
-import Highlight from './components/Highlight';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import MenuPage from './pages/MenuPage';
+import BookingPage from './pages/BookingPage';
+import OrderOnlinePage from './pages/OrderOnlinePage';
+import LoginPage from './pages/LoginPage';
 import Navigation from './components/Navigation';
-import Testimonials from './components/Testimonials';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <Hero />
-      <Highlight />
-      <Testimonials />
-      <About />
-      <Bottom />
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/menu' element={<MenuPage />} />
+          <Route path='/book' element={<BookingPage />} />
+          <Route path='/order' element={<OrderOnlinePage />} />
+          <Route path='/login' element={<LoginPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
