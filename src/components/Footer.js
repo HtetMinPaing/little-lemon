@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Bottom = () => {
+const Footer = () => {
   return (
     <section>Bottom</section>
   )
 }
 
-export default Bottom
+export default Footer
