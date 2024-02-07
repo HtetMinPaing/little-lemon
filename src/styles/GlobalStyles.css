@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--primary-1: #495E57;
+	--primary-2: #F4CE14;
+	--secondary-1: #EE9972;
+	--secondary-2: #FBDABB;
+	--highlight-1: #EDEFEE;
+	--highlight-2: #333333;
+}
+html {
+	font-size: 65%;
+}
+body {
+	font-family: 'Markazi Text', serif;
+	width: 100%;
+	min-height: 100vh;
+}
+* {
+	font-family: 'Karla', sans-serif;
+
+}
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
