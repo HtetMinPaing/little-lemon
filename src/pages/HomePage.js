@@ -3,6 +3,7 @@ import Navigation from '../components/Navigation'
 import Hero from '../components/Hero'
 import Highlight from '../components/Highlight'
 import Testimonials from '../components/Testimonials'
+import About from '../components/About'
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Hero />
       <Highlight />
       <Testimonials />
+      <About />
     </div>
   )
 }

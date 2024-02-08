@@ -6,7 +6,8 @@ const Testimonials = () => {
   return (
     <div className='testimonials_wrapper' >
       <div className='testimonials_title'>
-        Testimonials</div>
+        Testimonials
+      </div>
       <div className='ratingcard_wrapper'>
       <RatingCard />
       <RatingCard />
