@@ -39,9 +39,8 @@ const Navigation = () => {
           <Link className='navLink' to={"/"}>Home</Link>
           <Link className='navLink' to={"/about"}>About</Link>
           <Link className='navLink' to={"/menu"}>Menu</Link>
-          <Link className='navLink' to={"/book"}>Book</Link>
-          <Link className='navLink' to={"/order"}>Order</Link>
-          <Link className='navLink' to={"/online"}>Online</Link>
+          <Link className='navLink' to={"/book"}>Reservation</Link>
+          <Link className='navLink' to={"/order"}>OrderOnline</Link>
           <Link className='navLink' to={"/login"}>Login</Link>
         </nav>
       </div>

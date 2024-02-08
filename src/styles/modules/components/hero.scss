@@ -7,6 +7,10 @@
     align-items: center;
     background: var(--primary-1);
     color: var(--highlight-1);
+    padding: 4rem;
+    @include smallDeviceSize {
+        padding: 0;
+    }
 }
 
 .leftBox {
@@ -17,7 +21,8 @@
 }
 
 .leftBox .title {
-    @include title
+    @include title;
+    color: var(--primary-2);
 }
 
 .leftBox .subtitle {

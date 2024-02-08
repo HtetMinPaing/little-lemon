@@ -1,0 +1,44 @@
+@import '../../_mixins.scss';
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem;
+    background: var(--primary-2);
+}
+
+.footer_image {
+    width: 20rem;
+}
+
+ul li {
+    list-style: none;
+    padding: 0.5rem;
+    @include link{
+        color: var(--highlight-2);
+        font-weight: 500;
+        &:hover {
+            color: var(--primary-1)
+        }
+    }
+}
+
+.title {
+    @include subtitle;
+    color: var(--primary-1);
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 20rem;
+    margin-top: 3rem;
+    .title {
+        padding-bottom: 2rem;
+    }
+}
