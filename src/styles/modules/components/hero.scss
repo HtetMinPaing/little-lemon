@@ -39,9 +39,3 @@
 .button {
     @include button
 }
-
-.button:hover {
-    color: var(--primary-1);
-    background: var(--secondary-1);
-    transition: 1.5s;
-}

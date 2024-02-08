@@ -1,0 +1,32 @@
+@import '../../_mixins.scss';
+
+.highlight_container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.highlight_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.highlight_title {
+    @include title;
+}
+
+.highlight_button {
+    @include button {
+        border-radius: 0.5rem;
+    }
+}
+
+.highlight_card_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}

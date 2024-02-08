@@ -13,6 +13,24 @@
     background-color: var(--primary-2);
     font-size: 1.8rem;
     cursor: pointer;
+	&:hover {
+		color: var(--primary-1);
+    	background: var(--secondary-1);
+    	transition: 1.5s;
+	}
+	@content;
+}
+
+@mixin link {
+	font-family: 'Karla', sans-serif;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--primary-2);
+	&:hover {
+		color: var(--secondary-1);
+		transition: 1.5s;
+	}
+	@content;
 }
 
 @mixin normalText {
