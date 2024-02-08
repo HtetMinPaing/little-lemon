@@ -1,0 +1,19 @@
+@import '../../_mixins.scss';
+
+.testimonials_wrapper {
+    padding: 6rem 0;
+    background-color: var(--primary-1);
+}
+
+.testimonials_title {
+    @include title;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.ratingcard_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}

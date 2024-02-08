@@ -43,3 +43,38 @@
 .cardImage {
     border-radius: 2rem 2rem 0 0;
 }
+
+/* Rating card*/
+
+.ratingcard_container {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 1.5rem;
+    background: var(--primary-2);
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.ratings {
+
+}
+
+.customer_details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.customer_name {
+    @include subtitle;
+}
+
+.customer_img {
+
+}
+
+.review {
+    @include normalText;
+}

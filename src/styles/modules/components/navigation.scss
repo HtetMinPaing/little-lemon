@@ -11,6 +11,7 @@
     left: 0;
     right: 0;
     z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     gap: 2rem;
     padding: 0.5rem;
     background-color: var(--highlight-1);
@@ -47,6 +48,7 @@
     width: 200%;
     text-align: center;
     color: var(--primary-1);
+    font-family: 'Karla', serif;
     @include smallDeviceSize {
         padding-bottom: 0.9rem;
         border-bottom: 0.2rem solid var(--primary-1);
@@ -58,6 +60,7 @@
 
 .navLink:hover {
     color: var(--primary-2);
+    transition: 0.5s;
 }
 
 .logo {
