@@ -1,0 +1,39 @@
+@import "../../mixins";
+
+.booking_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 4rem;
+    padding: 3rem 0;
+}
+
+.booking_image_wrapper {
+    width: 40%;
+    height: 40rem;
+    position: relative;
+    @include smallDeviceSize {
+        height: 25rem;
+        width: 90%;
+    }
+}
+
+.booking_image {
+    width: 70%;
+    border-radius: 2rem 5rem 2rem 5rem;
+}
+
+.up {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

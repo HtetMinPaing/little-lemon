@@ -10,31 +10,27 @@ const Navigation = () => {
 
   const [expandedMenu, setExpandedMenu] = useState(false);
 
-  const openDropDown = () => {
-    let menuIcon = document.querySelector('.menuIcon');
-    let navList = document.querySelector('.navList');
-    menuIcon.onclick=()=>{
-      navList.classList.toggle('active');
-      setExpandedMenu(!expandedMenu);
-    }
-  }
-
   useEffect(() => {
     let menuIcon = document.querySelector('.menuIcon');
     let navList = document.querySelector('.navList');
 
+    menuIcon.onclick=()=>{
+      navList.classList.toggle('active');
+      setExpandedMenu(!expandedMenu);
+    }
+
     window.onscroll = () => {
       navList.classList.remove('active');
-      setExpandedMenu(false)
+      if (expandedMenu) setExpandedMenu(false)
     }
-  },[]);
+  },[expandedMenu]);
 
   return (
     <header>
       <div className='navBar'>
         <img src={homeIcon} alt='|||' className='icon' />
         <img src={logo} alt='logo' className='logo' />
-        <img src={expandedMenu?xmarkIcon:hamburgerIcon} alt='|||' className='icon menuIcon' onClick={openDropDown}/>
+        <img src={expandedMenu?xmarkIcon:hamburgerIcon} alt='|||' className='icon menuIcon' />
         <nav className='navList'>
           <Link className='navLink' to={"/"}>Home</Link>
           <Link className='navLink' to={"/about"}>About</Link>
