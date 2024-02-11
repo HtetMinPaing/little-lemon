@@ -4,19 +4,21 @@ import '../styles/modules/components/card.scss'
 import customer from '../assets/Basket.svg'
 
 /* Card component for the highlight section */
-const Card = () => {
+const Card = ({ dessert }) => {
     return (
         <div className='cardContainer'>
-            <img src={foodOne} alt='' className='cardImage' />
+            <img src={dessert.img[0].sm} alt='' className='cardImage' />
             <div className='cardDetails'>
                 <div className='cardHeader'>
-                    <div className='cardTitle'>Greek Salad</div>
-                    <div className='cardPrice'>$ 12.99</div>
+                    <div className='cardTitle'>
+                        {dessert.name.length > 15 ? dessert.name.slice(0, 15) + "..." : dessert.name}
+                    </div>
+                    <div className='cardPrice'>$ {dessert.price}</div>
                 </div>
-                <p className='cardDescription'>The famous greek salad of crispy lettuce,
-                    peppers, olives and our Chicago style feta
-                    cheese, garnished with crunchy garlic and
-                    rosemary croutons.
+                <p className='cardDescription'>
+                    {
+                        dessert.desc.length > 140 ? dessert.desc.slice(0, 140) + "..." : dessert.desc
+                    }
                 </p>
             </div>
             <div>
@@ -28,11 +30,11 @@ const Card = () => {
 
 /* Card components for testimonials */
 export const RatingCard = () => {
-    return(
+    return (
         <div className='ratingcard_container'>
             <div className='ratings'>@ @ @ @ $</div>
             <div className='customer_details'>
-                <img src={customer} alt='' className='customer_img'/>
+                <img src={customer} alt='' className='customer_img' />
                 <div className='customer_name'>Kevin Joe</div>
             </div>
             <div className='review'>I really like to eat and buy food from here. It's so delicious</div>

@@ -1,0 +1,33 @@
+@import "../../mixins.scss";
+
+.menu_page {
+    margin-top: 10rem;
+}
+
+.menu_button_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2rem
+}
+
+.menu_button_wrapper button {
+    @include button;
+}
+
+#button_active {
+    background: var(--highlight-1);
+}
+
+.menu_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 3rem auto 10rem auto;
+}
