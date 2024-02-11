@@ -1,0 +1,22 @@
+@import "../../mixins.scss";
+
+.confirm_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm_wrapper .image {
+    width: 30rem;
+}
+
+.confirm_wrapper .title {
+    @include title;
+}
+
+.confirm_wrapper .text {
+    @include subtitle;
+}

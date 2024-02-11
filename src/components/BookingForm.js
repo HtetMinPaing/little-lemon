@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../styles/modules/components/bookingForm.scss"
 
-const BookingForm = () => {
-
-    const availableTimes = ["15:00", "16:00", "17:00", "18:00", "19:00", "20:00"]
+const BookingForm = ({availableTimes, setAvailableTimes, submitForm}) => {
 
     const [formData, setFormData] = useState({
         booking_date: "",
@@ -27,6 +25,7 @@ const BookingForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        submitForm(formData)
         setFormData({
             booking_date: "",
             booking_time: availableTimes[0],
@@ -36,7 +35,7 @@ const BookingForm = () => {
     }
 
     useEffect(()=>{
-        console.log(formData)
+        setAvailableTimes(formData.booking_date)
     },[formData])
     return (
         <form onSubmit={e => handleSubmit(e)}>
