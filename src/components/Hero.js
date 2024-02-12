@@ -1,6 +1,7 @@
 import React from 'react'
 import homeImage from '../assets/restauranfood.jpg'
 import '../styles/modules/components/hero.scss'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -12,7 +13,9 @@ const Hero = () => {
           <p>Lorem ipsum dolor sit amet, consectetur</p> 
           <p>adipiscing elit, sed do eiusmod tempor</p> 
           <p>incididunt ut labore et dolore magna aliqua.</p>
-          <button className='button'>Reserve a Table</button>
+          <button className='button'>
+            <a href={'/book'}>Reserve a Table</a>
+          </button>
         </p>
       </div>
       <div className='rightBox'>

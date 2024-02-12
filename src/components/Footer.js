@@ -9,12 +9,12 @@ const Footer = () => {
       <div className='wrapper'>
         <div className='title'>Navigation</div>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Reservation</li>
-          <li>Order Online</li>
-          <li>LogIn</li>
+          <li><a href={'/'}>Home</a></li>
+          <li><a href={'/about'}>About</a></li>
+          <li><a href={'/menu'}>Menu</a></li>
+          <li><a href={'/book'}>Reservation</a></li>
+          <li><a href={'/order-online'}>order Online</a></li>
+          <li><a href={'/login'}>Login</a></li>
         </ul>
       </div>
       <div className='wrapper'>

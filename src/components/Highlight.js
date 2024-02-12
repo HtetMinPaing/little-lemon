@@ -11,7 +11,9 @@ const Highlight = () => {
     <div className='highlight_container'>
       <div className='highlight_header'>
         <div className='highlight_title'>Special</div>
-        <button className='highlight_button'>Order Online</button>
+        <button className='highlight_button'>
+          <a href={"/order-online"}>Order Online</a>
+        </button>
       </div>
       <div className='highlight_card_wrapper'>
         {

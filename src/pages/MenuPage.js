@@ -20,7 +20,15 @@ const MenuPage = () => {
       </div>
       <div className='menu_wrapper'>
         {
+          foodType==="desserts" 
+          ?
           desserts.map((dessert) => {
+            return (
+              <Card dessert={dessert} key={dessert.id} />
+            )
+          }) 
+          :
+          beverages.map((dessert) => {
             return (
               <Card dessert={dessert} key={dessert.id} />
             )
