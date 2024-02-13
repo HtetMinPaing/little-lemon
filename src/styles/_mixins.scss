@@ -46,14 +46,17 @@
 	font-family: 'Karla', sans-serif;
 	font-size: 1.5rem;
     line-height: 1.5;
+	@content;
 }
 
 @mixin subtitle {
 	font-size: 1.8rem;
 	font-family: 'Karla', sans-serif;
+	@content;
 }
 
 @mixin title {
 	font-size: 4rem;
 	font-family: 'Markazi Text', serif;
+	@content;
 }

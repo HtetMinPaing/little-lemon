@@ -1,0 +1,49 @@
+@import "../../mixins.scss";
+
+.login_page{
+    margin: 10rem auto;
+    h1 {
+        @include title{
+            color: var(--primary-2);
+            text-align: center;
+            padding: 5rem;
+        }
+    }
+}
+
+.login_form_wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    width: 40%;
+    @include smallDeviceSize {
+        width: 90%;
+    }
+}
+
+.inputField {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputField input {
+    width: 60%;
+}
+
+.login_button_wrapper{
+    align-self: center;
+    display: flex;
+    gap: 2rem
+}
+
+.login_button{
+    @include button;
+}
+
+.signup_button{
+    @include button {
+        background-color: var(--highlight-1);
+    }
+}

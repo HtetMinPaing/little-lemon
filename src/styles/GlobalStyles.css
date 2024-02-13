@@ -40,3 +40,13 @@ body {
 a {
 	text-decoration: none;
 }
+
+label, input, select {
+    @include subtitle
+}
+
+input, select {
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--highlight-2);
+}

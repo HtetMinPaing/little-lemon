@@ -22,14 +22,17 @@
     font-family: 'Markazi Text', serif;
     font-size: 1.8rem;
     font-weight: 700;
-}
-
-.cardPrice {
     color: var(--primary-2);
 }
 
+.cardPrice {
+    color: var(--secondary-1);
+}
+
 .cardDescription {
-    @include normalText;
+    @include normalText {
+        color: var(--highlight-1);
+    }
 }
 
 .cardButton {
